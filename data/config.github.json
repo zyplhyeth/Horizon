@@ -26,7 +26,7 @@
         "topic_dedup": false
       },
       "finance-news": {
-        "threshold": 7.0,
+        "threshold": 5.0,
         "topic_dedup": true
       }
     }
@@ -119,6 +119,111 @@
         "enabled": true,
         "category": "linux-kernel",
         "profile": "tech-news"
+      },
+      {
+        "name": "新品牌与母公司",
+        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%20%E6%96%B0%E5%93%81%E7%89%8C%20%E6%8E%A8%E5%87%BA%20%E6%AF%8D%E5%85%AC%E5%8F%B8%20%E5%8A%A0%E7%9B%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "finance-news"
+      },
+      {
+        "name": "新开放加盟机会",
+        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%20%E5%93%81%E7%89%8C%20%E6%96%B0%E5%BC%80%E6%94%BE%E5%8A%A0%E7%9B%9F%20%E7%9B%B4%E8%90%A5%202026&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "finance-news"
+      },
+      {
+        "name": "餐饮融资与扩张",
+        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%E8%BF%9E%E9%94%81%20%E5%93%81%E7%89%8C%20%E8%9E%8D%E8%B5%84%20%E6%89%A9%E5%BC%A0%20%E4%BE%9B%E5%BA%94%E9%93%BE&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "finance-news"
+      },
+      {
+        "name": "加盟经营数据",
+        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%20%E5%8A%A0%E7%9B%9F%E9%97%A8%E5%BA%97%20%E6%8A%95%E8%B5%84%E5%9B%9E%E6%9C%AC%20%E8%90%A5%E6%94%B6%20%E9%97%AD%E5%BA%97&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "finance-news"
+      },
+      {
+        "name": "外卖平台政策",
+        "url": "https://news.google.com/rss/search?q=%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96%20%E4%BA%AC%E4%B8%9C%E5%A4%96%E5%8D%96%20%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD%20%E5%95%86%E5%AE%B6%20%E6%94%BF%E7%AD%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "takeaway",
+        "profile": "finance-news"
+      },
+      {
+        "name": "外卖商家经营",
+        "url": "https://news.google.com/rss/search?q=%E5%A4%96%E5%8D%96%E5%95%86%E5%AE%B6%20%E4%BD%A3%E9%87%91%20%E8%A1%A5%E8%B4%B4%20%E7%BB%8F%E8%90%A5&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "takeaway",
+        "profile": "finance-news"
+      },
+      {
+        "name": "中式快餐和米饭",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%BC%8F%E5%BF%AB%E9%A4%90%20%E7%9B%96%E7%A0%81%E9%A5%AD%20%E7%B1%B3%E9%A5%AD%20%E7%BB%8F%E8%90%A5%20%E8%BF%9E%E9%94%81&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "takeaway",
+        "profile": "finance-news"
+      },
+      {
+        "name": "餐饮行业趋势",
+        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%E8%A1%8C%E4%B8%9A%20%E4%B8%AD%E5%9B%BD%20%E6%B6%88%E8%B4%B9%20%E8%BF%9E%E9%94%81%20%E5%A2%9E%E9%95%BF&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "takeaway",
+        "profile": "finance-news"
+      },
+      {
+        "name": "国内要闻",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%9B%BD%20%E9%87%8D%E5%A4%A7%E6%96%B0%E9%97%BB%20%E6%94%BF%E7%AD%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "national",
+        "profile": "finance-news"
+      },
+      {
+        "name": "中国经济政策",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%9B%BD%20%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96%20%E6%B6%88%E8%B4%B9%20%E5%B8%82%E5%9C%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "national",
+        "profile": "finance-news"
+      },
+      {
+        "name": "实用AI工具",
+        "url": "https://news.google.com/rss/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%20AI%E5%B7%A5%E5%85%B7%20%E6%96%B0%E4%BA%A7%E5%93%81&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "ai-news",
+        "profile": "tech-news"
+      },
+      {
+        "name": "财经商业机会",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%9B%BD%20%E5%95%86%E4%B8%9A%20%E6%B6%88%E8%B4%B9%20%E6%8A%95%E8%B5%84%20%E6%96%B0%E8%B6%8B%E5%8A%BF&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "business",
+        "profile": "finance-news"
+      },
+      {
+        "name": "永州本地新闻",
+        "url": "https://news.google.com/rss/search?q=%E6%B0%B8%E5%B7%9E%20%E6%96%B0%E9%97%BB%20%E6%94%BF%E7%AD%96%20%E6%B0%91%E7%94%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "hunan",
+        "profile": "finance-news"
+      },
+      {
+        "name": "邵东本地新闻",
+        "url": "https://news.google.com/rss/search?q=%E9%82%B5%E4%B8%9C%20%E6%96%B0%E9%97%BB%20%E7%BB%8F%E6%B5%8E%20%E5%95%86%E4%B8%9A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "hunan",
+        "profile": "finance-news"
+      },
+      {
+        "name": "湖南周边动态",
+        "url": "https://news.google.com/rss/search?q=%E6%B9%96%E5%8D%97%20%E5%95%86%E4%B8%9A%20%E9%A4%90%E9%A5%AE%20%E6%B0%91%E7%94%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "hunan",
+        "profile": "finance-news"
       }
     ],
     "reddit": {
@@ -153,7 +258,10 @@
           "channel": "zaihuapd",
           "enabled": true,
           "fetch_limit": 20,
-          "profile": ["tech-news", "finance-news"]
+          "profile": [
+            "tech-news",
+            "finance-news"
+          ]
         }
       ]
     }
@@ -162,15 +270,65 @@
     "time_window_hours": 24
   },
   "digest": {
-    "max_items": null,
+    "max_items": 20,
     "profile_order": [
+      "finance-news",
       "tech-news",
-      "tech-blog",
-      "finance-news"
+      "tech-blog"
     ],
-    "category_groups": {},
+    "category_groups": {
+      "franchise": {
+        "name": "新餐饮加盟",
+        "limit": 5,
+        "categories": [
+          "franchise"
+        ]
+      },
+      "takeaway": {
+        "name": "餐饮与外卖",
+        "limit": 5,
+        "categories": [
+          "takeaway"
+        ]
+      },
+      "national": {
+        "name": "国内重大新闻",
+        "limit": 4,
+        "categories": [
+          "national"
+        ]
+      },
+      "ai": {
+        "name": "AI科技",
+        "limit": 3,
+        "categories": [
+          "ai-news",
+          "ai-tools",
+          "llm-inference",
+          "software-engineering",
+          "github-trending",
+          "semiconductors",
+          "linux-kernel"
+        ]
+      },
+      "business": {
+        "name": "财经与商业",
+        "limit": 2,
+        "categories": [
+          "business",
+          "finance"
+        ]
+      },
+      "hunan": {
+        "name": "本地新闻（永州、邵东及湖南周边）",
+        "limit": 4,
+        "categories": [
+          "hunan"
+        ]
+      }
+    },
     "default_group": "other",
-    "default_group_limit": null
+    "default_group_limit": 3
   },
   "webhook": {
     "enabled": false,
@@ -207,7 +365,7 @@
         }
       }
     },
-     "headers": ""
+    "headers": ""
   },
   "email": {
     "enabled": true,
