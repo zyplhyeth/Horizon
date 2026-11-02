@@ -207,9 +207,8 @@
         }
       }
     },
-    "headers": ""
-  }
-},
+     "headers": ""
+  },
   "email": {
     "enabled": true,
     "smtp_server": "smtp.qq.com",
