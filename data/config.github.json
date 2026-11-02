@@ -26,7 +26,11 @@
         "topic_dedup": false
       },
       "finance-news": {
-        "threshold": 5.0,
+        "threshold": 3.0,
+        "topic_dedup": true
+      },
+      "franchise-watch": {
+        "threshold": 5.5,
         "topic_dedup": true
       }
     }
@@ -116,113 +120,218 @@
       {
         "name": "LWN.net",
         "url": "https://lwn.net/headlines/full_text?key=${LWN_KEY}",
-        "enabled": true,
+        "enabled": false,
         "category": "linux-kernel",
         "profile": "tech-news"
       },
       {
         "name": "新品牌与母公司",
-        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%20%E6%96%B0%E5%93%81%E7%89%8C%20%E6%8E%A8%E5%87%BA%20%E6%AF%8D%E5%85%AC%E5%8F%B8%20%E5%8A%A0%E7%9B%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E9%A4%90%E9%A5%AE%E6%96%B0%E5%93%81%E7%89%8C%20OR%20%E9%A4%90%E9%A5%AE%E5%AD%90%E5%93%81%E7%89%8C%20OR%20%E6%97%97%E4%B8%8B%E6%96%B0%E5%93%81%E7%89%8C%29%20%E5%8A%A0%E7%9B%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "franchise",
-        "profile": "finance-news"
+        "profile": "franchise-watch"
       },
       {
         "name": "新开放加盟机会",
-        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%20%E5%93%81%E7%89%8C%20%E6%96%B0%E5%BC%80%E6%94%BE%E5%8A%A0%E7%9B%9F%20%E7%9B%B4%E8%90%A5%202026&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E5%BC%80%E6%94%BE%E5%8A%A0%E7%9B%9F%20OR%20%E5%90%AF%E5%8A%A8%E5%8A%A0%E7%9B%9F%20OR%20%E6%8B%9B%E5%8B%9F%E5%8A%A0%E7%9B%9F%E5%95%86%29%20%E9%A4%90%E9%A5%AE&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "franchise",
-        "profile": "finance-news"
+        "profile": "franchise-watch"
       },
       {
         "name": "餐饮融资与扩张",
-        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%E8%BF%9E%E9%94%81%20%E5%93%81%E7%89%8C%20%E8%9E%8D%E8%B5%84%20%E6%89%A9%E5%BC%A0%20%E4%BE%9B%E5%BA%94%E9%93%BE&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E9%A4%90%E9%A5%AE%E8%9E%8D%E8%B5%84%20OR%20%E8%BF%9E%E9%94%81%E9%A4%90%E9%A5%AE%E6%89%A9%E5%BC%A0%20OR%20%E6%96%B0%E9%A4%90%E9%A5%AE%E5%93%81%E7%89%8C%29&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "franchise",
-        "profile": "finance-news"
+        "profile": "franchise-watch"
       },
       {
         "name": "加盟经营数据",
-        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%20%E5%8A%A0%E7%9B%9F%E9%97%A8%E5%BA%97%20%E6%8A%95%E8%B5%84%E5%9B%9E%E6%9C%AC%20%E8%90%A5%E6%94%B6%20%E9%97%AD%E5%BA%97&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E5%8A%A0%E7%9B%9F%E5%BA%97%E7%9B%88%E5%88%A9%20OR%20%E9%A4%90%E9%A5%AE%E5%8A%A0%E7%9B%9F%E5%9B%9E%E6%9C%AC%20OR%20%E9%A4%90%E9%A5%AE%E9%97%AD%E5%BA%97%29&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "franchise",
-        "profile": "finance-news"
+        "profile": "franchise-watch"
       },
       {
         "name": "外卖平台政策",
-        "url": "https://news.google.com/rss/search?q=%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96%20%E4%BA%AC%E4%B8%9C%E5%A4%96%E5%8D%96%20%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD%20%E5%95%86%E5%AE%B6%20%E6%94%BF%E7%AD%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96%20OR%20%E4%BA%AC%E4%B8%9C%E5%A4%96%E5%8D%96%20OR%20%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD%29%20%E5%95%86%E5%AE%B6&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "takeaway",
         "profile": "finance-news"
       },
       {
         "name": "外卖商家经营",
-        "url": "https://news.google.com/rss/search?q=%E5%A4%96%E5%8D%96%E5%95%86%E5%AE%B6%20%E4%BD%A3%E9%87%91%20%E8%A1%A5%E8%B4%B4%20%E7%BB%8F%E8%90%A5&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E5%A4%96%E5%8D%96%E5%95%86%E5%AE%B6%20OR%20%E5%A4%96%E5%8D%96%E8%BF%90%E8%90%A5%20OR%20%E5%B9%B3%E5%8F%B0%E6%8A%BD%E4%BD%A3%29&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "takeaway",
         "profile": "finance-news"
       },
       {
         "name": "中式快餐和米饭",
-        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%BC%8F%E5%BF%AB%E9%A4%90%20%E7%9B%96%E7%A0%81%E9%A5%AD%20%E7%B1%B3%E9%A5%AD%20%E7%BB%8F%E8%90%A5%20%E8%BF%9E%E9%94%81&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E7%9B%96%E7%A0%81%E9%A5%AD%20OR%20%E7%B1%B3%E9%A5%AD%E5%BF%AB%E9%A4%90%20OR%20%E4%B8%AD%E5%BC%8F%E5%BF%AB%E9%A4%90%29%20%E8%BF%9E%E9%94%81&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "takeaway",
         "profile": "finance-news"
       },
       {
         "name": "餐饮行业趋势",
-        "url": "https://news.google.com/rss/search?q=%E9%A4%90%E9%A5%AE%E8%A1%8C%E4%B8%9A%20%E4%B8%AD%E5%9B%BD%20%E6%B6%88%E8%B4%B9%20%E8%BF%9E%E9%94%81%20%E5%A2%9E%E9%95%BF&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E9%A4%90%E9%A5%AE%E8%A1%8C%E4%B8%9A%20OR%20%E9%A4%90%E9%A5%AE%E4%BC%81%E4%B8%9A%29%20%E5%A2%9E%E9%95%BF&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "takeaway",
         "profile": "finance-news"
       },
       {
         "name": "国内要闻",
-        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%9B%BD%20%E9%87%8D%E5%A4%A7%E6%96%B0%E9%97%BB%20%E6%94%BF%E7%AD%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E4%B8%AD%E5%9B%BD%E6%94%BF%E7%AD%96%20OR%20%E5%9B%BD%E5%86%85%E9%87%8D%E5%A4%A7%E6%96%B0%E9%97%BB%29&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "national",
         "profile": "finance-news"
       },
       {
         "name": "中国经济政策",
-        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%9B%BD%20%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96%20%E6%B6%88%E8%B4%B9%20%E5%B8%82%E5%9C%BA&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96%20OR%20%E4%BF%83%E6%B6%88%E8%B4%B9%29%20%E4%B8%AD%E5%9B%BD&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "national",
         "profile": "finance-news"
       },
       {
         "name": "实用AI工具",
-        "url": "https://news.google.com/rss/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%20AI%E5%B7%A5%E5%85%B7%20%E6%96%B0%E4%BA%A7%E5%93%81&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28AI%E5%B7%A5%E5%85%B7%20OR%20%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%BA%94%E7%94%A8%29%20%E5%8F%91%E5%B8%83&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "ai-news",
         "profile": "tech-news"
       },
       {
         "name": "财经商业机会",
-        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%9B%BD%20%E5%95%86%E4%B8%9A%20%E6%B6%88%E8%B4%B9%20%E6%8A%95%E8%B5%84%20%E6%96%B0%E8%B6%8B%E5%8A%BF&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E5%95%86%E4%B8%9A%E6%96%B0%E6%A8%A1%E5%BC%8F%20OR%20%E6%B6%88%E8%B4%B9%E8%A1%8C%E4%B8%9A%20OR%20%E8%BF%9E%E9%94%81%E9%9B%B6%E5%94%AE%29&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "business",
         "profile": "finance-news"
       },
       {
         "name": "永州本地新闻",
-        "url": "https://news.google.com/rss/search?q=%E6%B0%B8%E5%B7%9E%20%E6%96%B0%E9%97%BB%20%E6%94%BF%E7%AD%96%20%E6%B0%91%E7%94%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E6%B0%B8%E5%B7%9E%20OR%20%E5%86%B7%E6%B0%B4%E6%BB%A9%29%20%E6%96%B0%E9%97%BB&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "hunan",
         "profile": "finance-news"
       },
       {
         "name": "邵东本地新闻",
-        "url": "https://news.google.com/rss/search?q=%E9%82%B5%E4%B8%9C%20%E6%96%B0%E9%97%BB%20%E7%BB%8F%E6%B5%8E%20%E5%95%86%E4%B8%9A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E9%82%B5%E4%B8%9C%20OR%20%E9%82%B5%E9%98%B3%29%20%E5%95%86%E4%B8%9A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "hunan",
         "profile": "finance-news"
       },
       {
         "name": "湖南周边动态",
-        "url": "https://news.google.com/rss/search?q=%E6%B9%96%E5%8D%97%20%E5%95%86%E4%B8%9A%20%E9%A4%90%E9%A5%AE%20%E6%B0%91%E7%94%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "url": "https://news.google.com/rss/search?q=%28%E6%B9%96%E5%8D%97%E9%A4%90%E9%A5%AE%20OR%20%E6%B9%96%E5%8D%97%E5%95%86%E4%B8%9A%20OR%20%E6%B9%96%E5%8D%97%E6%B6%88%E8%B4%B9%29&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
         "enabled": true,
         "category": "hunan",
+        "profile": "finance-news"
+      },
+      {
+        "name": "红餐网·新餐饮品牌",
+        "url": "https://news.google.com/rss/search?q=site%3Acanyin88.com%20%E9%A4%90%E9%A5%AE%20%E6%96%B0%E5%93%81%E7%89%8C&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "红餐网·连锁经营",
+        "url": "https://news.google.com/rss/search?q=site%3Acanyin88.com%20%E5%8A%A0%E7%9B%9F%20%E8%BF%9E%E9%94%81&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "36氪·新消费餐饮",
+        "url": "https://news.google.com/rss/search?q=site%3A36kr.com%20%E9%A4%90%E9%A5%AE%20%E8%9E%8D%E8%B5%84&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "创业邦·新品牌融资",
+        "url": "https://news.google.com/rss/search?q=site%3Acyzone.cn%20%E9%A4%90%E9%A5%AE%20%E8%9E%8D%E8%B5%84&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "连锁经营协会·加盟动态",
+        "url": "https://news.google.com/rss/search?q=site%3Accfa.org.cn%20%E7%89%B9%E8%AE%B8%E7%BB%8F%E8%90%A5&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "红餐网·外卖商家",
+        "url": "https://news.google.com/rss/search?q=site%3Acanyin88.com%20%E5%A4%96%E5%8D%96%20%E5%95%86%E5%AE%B6&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "takeaway",
+        "profile": "finance-news"
+      },
+      {
+        "name": "36氪·即时零售外卖",
+        "url": "https://news.google.com/rss/search?q=site%3A36kr.com%20%E5%A4%96%E5%8D%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "takeaway",
+        "profile": "finance-news"
+      },
+      {
+        "name": "餐饮老板内参·新餐饮与加盟",
+        "url": "https://news.google.com/rss/search?q=site%3Awatcn.com%20%E9%A4%90%E9%A5%AE%20%E5%8A%A0%E7%9B%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "餐饮老板内参·新品牌扩张",
+        "url": "https://news.google.com/rss/search?q=site%3Awatcn.com%20%E6%96%B0%E5%93%81%E7%89%8C%20%E9%A4%90%E9%A5%AE&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "餐饮老板内参·外卖经营",
+        "url": "https://news.google.com/rss/search?q=site%3Awatcn.com%20%E5%A4%96%E5%8D%96&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "takeaway",
+        "profile": "finance-news"
+      },
+      {
+        "name": "商务部·特许经营官方动态",
+        "url": "https://news.google.com/rss/search?q=site%3Amofcom.gov.cn%20%E5%95%86%E4%B8%9A%E7%89%B9%E8%AE%B8%E7%BB%8F%E8%90%A5&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "连锁协会·新加盟品牌",
+        "url": "https://news.google.com/rss/search?q=site%3Accfa.org.cn%20%E5%8A%A0%E7%9B%9F%20%E9%A4%90%E9%A5%AE&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "franchise",
+        "profile": "franchise-watch"
+      },
+      {
+        "name": "永州餐饮商业动态",
+        "url": "https://news.google.com/rss/search?q=%E6%B0%B8%E5%B7%9E%20%E9%A4%90%E9%A5%AE%20%E6%96%B0%E5%BA%97%20%E5%95%86%E4%B8%9A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "hunan",
+        "profile": "finance-news"
+      },
+      {
+        "name": "邵东餐饮商业动态",
+        "url": "https://news.google.com/rss/search?q=%E9%82%B5%E4%B8%9C%20%E9%A4%90%E9%A5%AE%20%E5%95%86%E4%B8%9A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "hunan",
+        "profile": "finance-news"
+      },
+      {
+        "name": "36氪官方文章RSS（可选，默认关闭以控制费用）",
+        "url": "https://36kr.com/feed-article",
+        "enabled": false,
+        "category": "business",
         "profile": "finance-news"
       }
     ],
@@ -272,13 +381,14 @@
   "digest": {
     "max_items": 20,
     "profile_order": [
+      "franchise-watch",
       "finance-news",
       "tech-news",
       "tech-blog"
     ],
     "category_groups": {
       "franchise": {
-        "name": "新餐饮加盟",
+        "name": "新餐饮品牌与加盟线索（待核验）",
         "limit": 5,
         "categories": [
           "franchise"
@@ -320,7 +430,7 @@
         ]
       },
       "hunan": {
-        "name": "本地新闻（永州、邵东及湖南周边）",
+        "name": "本地新闻（永州、邵东及周边）",
         "limit": 4,
         "categories": [
           "hunan"
