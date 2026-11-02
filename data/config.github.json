@@ -219,6 +219,6 @@
     "imap_port": 993,
     "email_address": "379457984@qq.com",
     "password_env": "EMAIL_PASSWORD",
-    "sender_name": "Horizon每日中文新闻"
+    "sender_name": "Horizon Daily"
   }
 }
