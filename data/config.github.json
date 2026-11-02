@@ -210,3 +210,17 @@
     "headers": ""
   }
 }
+,
+  "email": {
+    "enabled": true,
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "smtp_username": "379457984@qq.com",
+    "imap_enabled": false,
+    "imap_server": "imap.qq.com",
+    "imap_port": 993,
+    "email_address": "379457984@qq.com",
+    "password_env": "EMAIL_PASSWORD",
+    "sender_name": "Horizon每日中文新闻"
+  }
+}
