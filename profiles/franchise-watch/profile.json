@@ -1,0 +1,52 @@
+{
+  "id": "franchise-watch",
+  "name": "Restaurant Brand & Franchise Watch",
+  "display_names": {
+    "zh": "新餐饮品牌与加盟观察"
+  },
+  "match": "match.md",
+  "analysis": "analysis.md",
+  "content": {
+    "analysis_max_chars": 5500,
+    "enrichment_max_chars": 9000,
+    "sampling": "prefix"
+  },
+  "enrichment": {
+    "prompt": "enrichment.md",
+    "blocks": [
+      {
+        "id": "summary",
+        "type": "section",
+        "tools": [],
+        "primary": true
+      },
+      {
+        "id": "strength",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ]
+      },
+      {
+        "id": "franchise_status",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ],
+        "optional": true
+      },
+      {
+        "id": "risk",
+        "type": "section",
+        "tools": []
+      },
+      {
+        "id": "verification",
+        "type": "section",
+        "tools": [
+          "web_search"
+        ]
+      }
+    ]
+  }
+}
